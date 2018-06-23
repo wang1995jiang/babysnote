@@ -7,3 +7,7 @@
 5.刷脸进入，体验黑科技从我做起！自己的脸就是通行证~<br>
 6.手机禁玩！一键开启禁玩，告别玩手机重度患者！<br>
 ## 图片展示
+### 首页
+<img src="https://github.com/wang1995jiang/babysnote/blob/master/Screenshot_20180620-165154.png" width="300" height="500" alt="首页"/><br>
+### 设置
+<img src="https://github.com/wang1995jiang/babysnote/blob/master/Screenshot_20180620-165240.png" width="300" height="500" alt="设置"/><br>
