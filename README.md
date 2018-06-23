@@ -15,3 +15,16 @@
 <img src="https://github.com/wang1995jiang/babysnote/blob/master/Screenshot_20180623-184238.png" width="300" height="500" alt="设置"/><br>
 ### 手机禁玩
 <img src="https://github.com/wang1995jiang/babysnote/blob/master/Screenshot_20180623-184245.png" width="300" height="500" alt="设置"/><br>
+## 亮点
+### 功能丰富
+文本，富文本，随手拍，日记...丰富的编辑功能满足你的任何需求！<br>
+### 隐私安全
+开启刷脸进入App，你的脸就是你的随身密码！<br>
+设置日记空间隐私访问密码，为你的隐私安全再加上第二道锁<br>
+### 特色功能
+手机禁玩，为你的坚持加鼓劲！<br>
+实时查看天气信息，快速制定出行计划<br>
+实时地理位置反馈，从此知道自己的方向<br>
+### 关于作者
+目前大学生一枚，做的不好的地方请多多指教。<br>
+欢迎共同探讨技术问题，邮箱1962751382@qq.com
