@@ -7,20 +7,14 @@
 5.刷脸进入，体验黑科技从我做起！自己的脸就是通行证~<br>
 6.手机禁玩！一键开启禁玩，告别玩手机重度患者！<br>
 ## 图片展示
-首页<br>
+### 首页
 <img src="https://github.com/wang1995jiang/babysnote/blob/master/Screenshot_20180620-165154.png" width="300" height="500" alt="首页"/>
-<img src="https://github.com/wang1995jiang/babysnote/blob/master/Screenshot_20180620-170521.png" width="300" height="500" alt="首页"/><br>
-设置<br>
-<img src="https://github.com/wang1995jiang/babysnote/blob/master/Screenshot_20180620-165240.png" width="300" height="500" alt="设置"/><br>
-人脸识别<br>
-<img src="https://github.com/wang1995jiang/babysnote/blob/master/Screenshot_20180623-183714.png" width="300" height="500" alt="设置"/>
+### 设置
+<img src="https://github.com/wang1995jiang/babysnote/blob/master/Screenshot_20180620-165240.png" width="300" height="500" alt="设置"/>
+### 人脸识别
 <img src="https://github.com/wang1995jiang/babysnote/blob/master/Screenshot_20180623-184238.png" width="300" height="500" alt="设置"/><br>
-手机禁玩<br>
-<img src="https://github.com/wang1995jiang/babysnote/blob/master/Screenshot_20180623-184245.png" width="300" height="500" alt="设置"/><br>
-日记空间<br>
-<img src="https://github.com/wang1995jiang/babysnote/blob/master/Screenshot_20180623-184301.png" width="300" height="500" alt="设置"/>
-<img src="https://github.com/wang1995jiang/babysnote/blob/master/Screenshot_20180623-184317.png" width="300" height="500" alt="设置"/>
-<img src="https://github.com/wang1995jiang/babysnote/blob/master/Screenshot_20180623-184326.png" width="300" height="500" alt="设置"/>
-<img src="https://github.com/wang1995jiang/babysnote/blob/master/Screenshot_20180623-184338.png" width="300" height="500" alt="设置"/>
+### 手机禁玩
+<img src="https://github.com/wang1995jiang/babysnote/blob/master/Screenshot_20180623-184245.png" width="300" height="500" alt="设置"/>
+
 
 
