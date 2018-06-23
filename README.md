@@ -10,5 +10,6 @@
 首页<br>
 <img src="https://github.com/wang1995jiang/babysnote/blob/master/Screenshot_20180620-165154.png" width="300" height="500" alt="首页"/>
 <img src="https://github.com/wang1995jiang/babysnote/blob/master/Screenshot_20180620-170521.png" width="300" height="500" alt="首页"/><br>
-设置
+设置<br>
 <img src="https://github.com/wang1995jiang/babysnote/blob/master/Screenshot_20180620-165240.png" width="300" height="500" alt="设置"/><br>
+
