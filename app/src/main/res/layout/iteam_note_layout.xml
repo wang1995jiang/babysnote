@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:id="@+id/item_note_linear"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/time_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="时间"
+            android:textSize="12sp"
+            android:textColor="#a3a3a3"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/content_note"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="130dp" />
+        <include
+            layout="@layout/line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:id="@+id/label_note"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:text="标签"
+                android:gravity="center"/>
+            <ImageView
+                android:id="@+id/star_note"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/no_star"/>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

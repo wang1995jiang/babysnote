@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:background="@drawable/shape">
+
+    <TextView
+        android:id="@+id/delete_note"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="#ff5d5d"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c1c1c1"/>
+
+    <TextView
+        android:id="@+id/delete_all_note"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="全部删除"
+        android:textColor="#ff5d5d"/>
+</LinearLayout>

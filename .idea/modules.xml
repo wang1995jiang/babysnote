@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://D:\androidstuid-project\peng8350-JPTabBar-d6abb7d\.idea\modules\JPTabBar.iml" filepath="D:\androidstuid-project\peng8350-JPTabBar-d6abb7d\.idea\modules\JPTabBar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\androidstuid-project\peng8350-JPTabBar-d6abb7d\.idea\modules\app\app.iml" filepath="D:\androidstuid-project\peng8350-JPTabBar-d6abb7d\.idea\modules\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://D:\androidstuid-project\peng8350-JPTabBar-d6abb7d\.idea\modules\library\library.iml" filepath="D:\androidstuid-project\peng8350-JPTabBar-d6abb7d\.idea\modules\library\library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/peng8350-JPTabBar-d6abb7d.iml" filepath="$PROJECT_DIR$/peng8350-JPTabBar-d6abb7d.iml" />
+    </modules>
+  </component>
+</project>

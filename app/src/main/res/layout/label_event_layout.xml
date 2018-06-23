@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="添加标签"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#060606"/>
+    <include
+        layout="@layout/line"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/tourism_label"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="旅游"
+            android:gravity="center" />
+        <include
+            layout="@layout/line"/>
+        <RadioButton
+            android:id="@+id/personal_label"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="个人"
+            android:gravity="center"/>
+        <include
+            layout="@layout/line"/>
+        <RadioButton
+            android:id="@+id/life_label"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="生活"
+            android:gravity="center"/>
+        <include
+            layout="@layout/line"/>
+
+    </RadioGroup>
+    
+    
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/diary_baoung"
+        android:fitsSystemWindows="true"/>
+
+    <RelativeLayout
+        android:id="@+id/toolbar_lin"
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+        <LinearLayout
+            android:id="@+id/back_toolbar"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/back_white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title_tooolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:text="日记详情"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="52dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:textColor="#a4a4a4"
+                android:id="@+id/time_diary_detail"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="时间"
+                android:textSize="15sp"/>
+            <TextView
+                android:textColor="#606060"
+                android:id="@+id/weather_diary_detail"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="天气"
+                android:textSize="18sp"/>
+            <TextView
+                android:textColor="#fff"
+                android:id="@+id/mood_diary_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="心情"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <EditText
+            android:focusable="false"
+            android:id="@+id/content_diary_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"/>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

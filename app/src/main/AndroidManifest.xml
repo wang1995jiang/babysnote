@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jpeng.demo">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_lanucher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="a73a3fad77b76d60e82998e696f10c9e" />
+        <meta-data
+            android:name="com.baidu.speech.APP_ID"
+            android:value="11093437" />
+        <meta-data
+            android:name="com.baidu.speech.API_KEY"
+            android:value="woGe6IyI56Scox2EOb9Ov1SS" />
+        <meta-data
+            android:name="com.baidu.speech.SECRET_KEY"
+            android:value="d0xgcHRxA4GLKH6rMEOO1SULyqQf0mCf" />
+
+        <activity android:name=".face.PermissionAcitivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SayActivity" />
+        <activity android:name=".set.SetType" />
+        <activity android:name=".set.ChoseColor" />
+        <activity android:name=".SaveConfiguration" />
+        <activity android:name=".set.PeopleInformation" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.jpeng.demo.set.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".add.AddEvent" />
+        <activity android:name=".add.LearningNotes" />
+        <activity android:name=".set.LearnLabel" />
+        <activity android:name=".set.PhotoProhibit" />
+        <activity android:name=".add.AddCarmera" />
+        <activity android:name=".diarys.Encryption" />
+        <activity android:name=".diarys.SetDiary" />
+        <activity android:name=".diarys.Diary" />
+        <activity android:name=".diarys.Fingerprint" />
+        <activity android:name=".face.DetecterActivity" />
+        <activity android:name=".face.RegisterActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".face.FaceRecognition" />
+        <activity android:name=".StartFace" />
+        <activity android:name=".map.GaoDeMap" />
+        <activity android:name=".vioce.mini.ActivityMiniRecog" />
+        <activity android:name=".vioce.ActivityOnline" />
+        <activity android:name=".vioce.ActivityUiDialog" />
+        <activity android:name=".vioce.setting.AllSetting" />
+        <activity android:name=".vioce.setting.NluSetting" />
+        <activity android:name=".vioce.setting.OfflineSetting" />
+        <activity android:name=".vioce.setting.OnlineSetting" />
+        <activity android:name=".vioce.ui.BaiduASRDigitalDialog" />
+        <activity android:name=".vioce.ActivityWakeUp" />
+        <activity android:name=".clock.ClockSet" />
+        <activity android:name=".vioce.mini.ActivityMiniWakeUp" />
+        <activity android:name=".vioce.mini.MiniActivity" />
+
+        <service android:name="com.amap.api.location.APSService" />
+        <service
+            android:name="com.baidu.speech.VoiceRecognitionService"
+            android:exported="false" />
+
+        <activity android:name=".weather.WeatherActivity" />
+        <activity android:name=".clock.AddRemind" />
+
+        <service
+            android:name=".clock.NotificationService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".clock.PlayRingtoneService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".diarys.DiaryDetails"
+            android:theme="@style/DiaryActivityTheme"></activity>
+    </application>
+
+</manifest>

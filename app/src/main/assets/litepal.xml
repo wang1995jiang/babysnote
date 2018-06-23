@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<litepal>
+    <dbname value="PeopleStore"/>
+    <version value="3"/>
+    <list>
+        <mapping class="com.jpeng.demo.diarys.DiaryEntity"/>
+        <mapping class="com.jpeng.demo.notes.Carmera"/>
+        <mapping class="com.jpeng.demo.notes.Learn"/>
+        <mapping class="com.jpeng.demo.notes.Note"/>
+    </list>
+</litepal>
