@@ -28,3 +28,7 @@
 ### 关于作者
 目前大学生一枚，做的不好的地方请多多指教。<br>
 欢迎共同探讨技术问题，邮箱1962751382@qq.com
+### 相关链接
+[富文本编辑器](https://github.com/wang1995jiang/richnote)<br>
+[天气页面](https://github.com/wang1995jiang/hefengweather)<br>
+
