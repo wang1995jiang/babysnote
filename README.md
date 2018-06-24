@@ -25,10 +25,10 @@
 手机禁玩，为你的坚持加鼓劲！<br>
 实时查看天气信息，快速制定出行计划<br>
 实时地理位置反馈，从此知道自己的方向<br>
-### 关于作者
+## 关于作者
 目前大学生一枚，做的不好的地方请多多指教。<br>
 欢迎共同探讨技术问题，邮箱1962751382@qq.com
-### 相关链接
+## 相关链接
 [富文本编辑器](https://github.com/wang1995jiang/richnote)<br>
 [天气页面](https://github.com/wang1995jiang/hefengweather)<br>
 
