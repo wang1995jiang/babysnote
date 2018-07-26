@@ -83,7 +83,9 @@ import com.jpeng.jptabbar.anno.NorIcons;
 import com.jpeng.jptabbar.anno.SeleIcons;
 import com.jpeng.jptabbar.anno.Titles;
 
+import org.litepal.LitePal;
 import org.litepal.crud.DataSupport;
+import org.litepal.crud.LitePalSupport;
 import org.litepal.tablemanager.Connector;
 
 import java.io.FileNotFoundException;
@@ -269,9 +271,9 @@ public class MainActivity extends AddressAndWeather implements BadgeDismissListe
 
         cancel();
 
-        noteList=DataSupport.findAll(Note.class);
-        learns=DataSupport.findAll(Learn.class);
-        carmeras=DataSupport.findAll(Carmera.class);
+        noteList= LitePal.findAll(Note.class);
+        learns= LitePal.findAll(Learn.class);
+        carmeras=LitePal.findAll(Carmera.class);
 
         if (noteList.size()>0){
             for(Note note:noteList){
@@ -502,6 +504,7 @@ public class MainActivity extends AddressAndWeather implements BadgeDismissListe
     protected void onDestroy() {
         super.onDestroy();
         ActivityCollector.removeActivity(this);
+        localBroadcastManager.unregisterReceiver(localReceiver);
     }
 
     private void changeTabBar(int id){
@@ -765,7 +768,7 @@ public class MainActivity extends AddressAndWeather implements BadgeDismissListe
     private void deleteAll(int id){
         switch (id){
             case 0:
-                DataSupport.deleteAll(Note.class);
+                LitePal.deleteAll(Note.class);
                 if (noteList.size()>0){
                     noteList.removeAll(noteList);
                 }
@@ -776,7 +779,7 @@ public class MainActivity extends AddressAndWeather implements BadgeDismissListe
                 mTab1.toUpdate();
                 break;
             case 1:
-                DataSupport.deleteAll(Learn.class);
+                LitePal.deleteAll(Learn.class);
                 if (learns.size()>0){
                     learns.removeAll(learns);
                 }
@@ -787,7 +790,7 @@ public class MainActivity extends AddressAndWeather implements BadgeDismissListe
                 mTab3.toUpdate();
                 break;
             case 2:
-                DataSupport.deleteAll(Carmera.class);
+                LitePal.deleteAll(Carmera.class);
                 if (carmeras.size()>0){
                     carmeras.removeAll(carmeras);
                 }
@@ -934,15 +937,15 @@ public class MainActivity extends AddressAndWeather implements BadgeDismissListe
                 airTemperature.setText(Provide.getWeather().getHeWeather6().get(0).getNow().getFl()+"°C");
             }
             if (intent.getAction().equals("com.jpeng.demo.ADDSUCCESSNOTE")){
-                noteList.add(DataSupport.findLast(Note.class));
+                noteList.add(LitePal.findLast(Note.class));
                 mTab1.toUpdate();
             }
             if (intent.getAction().equals("com.jpeng.demo.ADDSUCCESSLEARN")){
-                learns.add(DataSupport.findLast(Learn.class));
+                learns.add(LitePal.findLast(Learn.class));
                 mTab3.toUpdate();
             }
             if (intent.getAction().equals("com.jpeng.demo.ADDSUCCESSCARMEAR")) {
-                carmeras.add(DataSupport.findLast(Carmera.class));
+                carmeras.add(LitePal.findLast(Carmera.class));
                 mTab4.toUpdate();
             }
         }

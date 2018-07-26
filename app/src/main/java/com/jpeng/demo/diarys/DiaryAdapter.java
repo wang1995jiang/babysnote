@@ -14,12 +14,14 @@ import com.bumptech.glide.Glide;
 import com.jpeng.demo.R;
 
 import java.util.List;
+import java.util.Observable;
+import java.util.Observer;
 
 /**
  * Created by 王将 on 2018/6/3.
  */
 
-public class DiaryAdapter extends RecyclerView.Adapter<DiaryAdapter.ViewHolder> {
+public class DiaryAdapter extends RecyclerView.Adapter<DiaryAdapter.ViewHolder>{
     private Context mContext;
     private List<DiaryEntity> diaryEntities;
 

@@ -1,12 +1,13 @@
 package com.jpeng.demo;
 
 import org.litepal.crud.DataSupport;
+import org.litepal.crud.LitePalSupport;
 
 /**
  * Created by 王将 on 2018/3/10.
  */
 
-public class People extends DataSupport{
+public class People extends LitePalSupport{
     private boolean isDetecter;
     private String nickName;
     private String personalitySignature;

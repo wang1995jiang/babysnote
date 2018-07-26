@@ -50,6 +50,7 @@ import com.jpeng.demo.ActivityCollector;
 import com.jpeng.demo.MyApplication;
 import com.jpeng.demo.R;
 
+import org.litepal.LitePal;
 import org.litepal.crud.DataSupport;
 
 import java.util.ArrayList;
@@ -268,7 +269,7 @@ public class SetDiary extends AppCompatActivity implements View.OnClickListener 
                 dialog.setPositiveButton("确定", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        DataSupport.deleteAll(DiaryEntity.class);
+                        LitePal.deleteAll(DiaryEntity.class);
                         Intent intent=new Intent("com.jpeng.demo.DELETEALLDIARY");
                         localBroadcastManager.sendBroadcast(intent);
                         Toast.makeText(MyApplication.getContext(),"日记已全部删除",Toast.LENGTH_SHORT).show();

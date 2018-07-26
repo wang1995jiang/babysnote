@@ -35,6 +35,7 @@ import com.jpeng.demo.MainActivity;
 import com.jpeng.demo.MyApplication;
 import com.jpeng.demo.R;
 
+import org.litepal.LitePal;
 import org.litepal.crud.DataSupport;
 import org.xml.sax.helpers.DefaultHandler;
 
@@ -81,7 +82,7 @@ public class Diary extends AppCompatActivity implements View.OnClickListener,Vie
 
         context=this;
 
-        diaryEntities= DataSupport.findAll(DiaryEntity.class);
+        diaryEntities= LitePal.findAll(DiaryEntity.class);
 
         if (diaryEntities.size()>0){
             for (DiaryEntity diaryEntity:diaryEntities){
@@ -208,6 +209,7 @@ public class Diary extends AppCompatActivity implements View.OnClickListener,Vie
             mediaPlayer.stop();
             mediaPlayer.release();
         }
+        localBroadcastManager.unregisterReceiver(localReceiver);
     }
 
     private void changeTextColor(int position) {
@@ -582,7 +584,7 @@ public class Diary extends AppCompatActivity implements View.OnClickListener,Vie
             }
             if (intent.getAction().equals("com.jpeng.demo.ADDDATASUCCESS_DIARY")){
 
-                diaryEntities.add(DataSupport.findLast(DiaryEntity.class));
+                diaryEntities.add(LitePal.findLast(DiaryEntity.class));
                 updateDelete();
                 allDiary.setToUpdate();
             }

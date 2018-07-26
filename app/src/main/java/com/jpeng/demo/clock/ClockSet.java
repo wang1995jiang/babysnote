@@ -136,6 +136,7 @@ public class ClockSet extends AppCompatActivity implements View.OnClickListener 
     protected void onDestroy() {
         super.onDestroy();
         ActivityCollector.removeActivity(this);
+        localBroadcastManager.unregisterReceiver(localReceiver);
     }
 
     @Override

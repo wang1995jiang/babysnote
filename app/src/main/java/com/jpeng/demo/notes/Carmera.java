@@ -1,12 +1,13 @@
 package com.jpeng.demo.notes;
 
 import org.litepal.crud.DataSupport;
+import org.litepal.crud.LitePalSupport;
 
 /**
  * Created by 王将 on 2018/3/27.
  */
 
-public class Carmera extends DataSupport{
+public class Carmera extends LitePalSupport{
     private int id;
     private String createTime;
     private String labelCarmera;

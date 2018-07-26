@@ -80,13 +80,11 @@ public class AddressAndWeather extends AppCompatActivity {
         //showProgress();
     }
 
-    private void showProgress(){
-        dialogPro=new Dialog(this);
+    private void showProgress() {
+        dialogPro = new Dialog(this);
         View inflate = LayoutInflater.from(this).inflate(R.layout.dialog_progress, null);
-        ProgressBar progressBar=(ProgressBar)inflate.findViewById(R.id.progress_bar);
-        show=(TextView)inflate.findViewById(R.id.show_result);
-        dialogPro.setContentView(inflate);
-        dialogPro.show();
+        ProgressBar progressBar = (ProgressBar) inflate.findViewById(R.id.progress_bar);
+        show = (TextView) inflate.findViewById(R.id.show_result);
     }
 
     public void getWeatherInfo(){

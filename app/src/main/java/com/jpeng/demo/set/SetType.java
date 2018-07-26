@@ -286,6 +286,7 @@ public class SetType extends CarmeraAndGall implements View.OnClickListener {
     protected void onDestroy() {
         super.onDestroy();
         ActivityCollector.removeActivity(this);
+        localBroadcastManager.unregisterReceiver(localReceiver);
     }
 
     private void creatDialog(){

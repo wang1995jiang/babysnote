@@ -1,12 +1,13 @@
 package com.jpeng.demo.diarys;
 
 import org.litepal.crud.DataSupport;
+import org.litepal.crud.LitePalSupport;
 
 /**
  * Created by 王将 on 2018/6/3.
  */
 
-public class DiaryEntity extends DataSupport{
+public class DiaryEntity extends LitePalSupport {
     private int id;
     private String time="";
     private String mood="";

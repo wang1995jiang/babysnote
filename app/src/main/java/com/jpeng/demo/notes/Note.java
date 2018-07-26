@@ -1,12 +1,13 @@
 package com.jpeng.demo.notes;
 
 import org.litepal.crud.DataSupport;
+import org.litepal.crud.LitePalSupport;
 
 /**
  * Created by 王将 on 2018/3/23.
  */
 
-public class Note extends DataSupport {
+public class Note extends LitePalSupport {
     private int id;
     private String createTime="";
     private String labelNote="";
