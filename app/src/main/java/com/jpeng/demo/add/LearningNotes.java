@@ -191,8 +191,12 @@ public class LearningNotes extends CarmeraAndGall implements View.OnClickListene
         for (int i=0;i<sigh.length;i++){
             switch (Integer.valueOf(sigh[i])){
                 case 0:
-                    linearLayout.addView(getEditext(linearLayout,contents.get(0)));
-                    contents.remove(0);
+                    if (contents.size()==0){
+                        linearLayout.addView(getEditext(linearLayout,""));
+                    }else {
+                        linearLayout.addView(getEditext(linearLayout,contents.get(0)));
+                        contents.remove(0);
+                    }
                     break;
                 case 1:
                     linearLayout.addView(getImageView(linearLayout,pictures.get(0)));
