@@ -65,7 +65,7 @@ public class Tab4Pager extends Fragment implements View.OnClickListener {
             addCarmear.setVisibility(View.VISIBLE);
             recyclerView.setVisibility(View.GONE);
         }else {
-            if (MainActivity.noteList.size()==1){
+            if (MainActivity.carmeras.size()==1){
                 addCarmear.setVisibility(View.GONE);
                 recyclerView.setVisibility(View.VISIBLE);
 
